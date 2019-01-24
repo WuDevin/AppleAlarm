@@ -49,6 +49,7 @@ CGFloat angleBetweenOriginAndPointA(CGPoint p) {
     if (p.y == 0) {
         p.y = CGFLOAT_MIN;
     }
+    
     CGFloat angle = atan(-p.y / p.x); // '-' because negative ordinates are positive in UIKit
     
     // atan() is defined in [-pi/2, pi/2], but we want a value in [0, 2*pi]
